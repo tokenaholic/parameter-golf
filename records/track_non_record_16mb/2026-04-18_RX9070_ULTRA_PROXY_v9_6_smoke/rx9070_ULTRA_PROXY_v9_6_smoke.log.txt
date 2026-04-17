@@ -1,0 +1,147 @@
+Running Python 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+Running PyTorch 2.9.1+rocm7.2.1
+NVIDIA-SMI not available on this system
+
+====================================================================================================
+train_shards: 16
+val_tokens: 262144
+model_params:41035952
+torch_compile: disabled
+hessian_clip: lambda=0.175
+untied_loop_mlps: ON (override MLPs for layers 4-5)
+parallel_residuals: ON (layers 7-13)
+kron_loop_mlps: ON (layers 4-5 min_features=64 kron_lr=0.022 kron_wd=0.005)
+shared_pass_signal: ON (max=8 scale=1.0)
+progressive_recurrence: phase1=0.2 phase2=0.35
+selective_denoise: method=v9.5 schedule=[1, 2, 3] weights=[0.55, 0.3, 0.15] shell=(0.02,0.10) anchor=(0.05,0.16) clean_prob=0.10 mask_keep=0.30 span_rate=0.01 start=0.42 phase2_only=True aux_prob=0.20 aux_w=0.22 time=True role=True router=False
+warmup_step: 1/150
+warmup_step: 2/150
+warmup_step: 3/150
+warmup_step: 4/150
+warmup_step: 5/150
+warmup_step: 6/150
+warmup_step: 10/150
+warmup_step: 20/150
+warmup_step: 30/150
+warmup_step: 40/150
+warmup_step: 50/150
+warmup_step: 60/150
+warmup_step: 70/150
+warmup_step: 80/150
+warmup_step: 90/150
+warmup_step: 100/150
+warmup_step: 110/150
+warmup_step: 120/150
+warmup_step: 130/150
+warmup_step: 140/150
+warmup_step: 150/150
+loop_warmup_phase1: encoder:[0, 1, 2, 3, 4, 5, 4, 5] decoder:[6, 7, 8, 9, 10, 11, 12, 13]
+loop_warmup_p1_step: 1/150
+loop_warmup_p1_step: 2/150
+loop_warmup_p1_step: 3/150
+loop_warmup_p1_step: 4/150
+loop_warmup_p1_step: 5/150
+loop_warmup_p1_step: 6/150
+loop_warmup_p1_step: 10/150
+loop_warmup_p1_step: 20/150
+loop_warmup_p1_step: 30/150
+loop_warmup_p1_step: 40/150
+loop_warmup_p1_step: 50/150
+loop_warmup_p1_step: 60/150
+loop_warmup_p1_step: 70/150
+loop_warmup_p1_step: 80/150
+loop_warmup_p1_step: 90/150
+loop_warmup_p1_step: 100/150
+loop_warmup_p1_step: 110/150
+loop_warmup_p1_step: 120/150
+loop_warmup_p1_step: 130/150
+loop_warmup_p1_step: 140/150
+loop_warmup_p1_step: 150/150
+loop_warmup_phase2: encoder:[0, 1, 2, 3, 4, 5, 4, 5, 4] decoder:[5, 6, 7, 8, 9, 10, 11, 12, 13]
+loop_warmup_p2_step: 1/150
+loop_warmup_p2_step: 2/150
+loop_warmup_p2_step: 3/150
+loop_warmup_p2_step: 4/150
+loop_warmup_p2_step: 5/150
+loop_warmup_p2_step: 6/150
+loop_warmup_p2_step: 10/150
+loop_warmup_p2_step: 20/150
+loop_warmup_p2_step: 30/150
+loop_warmup_p2_step: 40/150
+loop_warmup_p2_step: 50/150
+loop_warmup_p2_step: 60/150
+loop_warmup_p2_step: 70/150
+loop_warmup_p2_step: 80/150
+loop_warmup_p2_step: 90/150
+loop_warmup_p2_step: 100/150
+loop_warmup_p2_step: 110/150
+loop_warmup_p2_step: 120/150
+loop_warmup_p2_step: 130/150
+loop_warmup_p2_step: 140/150
+loop_warmup_p2_step: 150/150
+0/8000 val_loss: 9.0074 val_bpb: 3.5502
+1/8000 train_loss: 9.0084 clean_ce:9.0084 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.0m tok/s: 49510 looping:False
+2/8000 train_loss: 13.2041 clean_ce:13.2041 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.0m tok/s: 45499 looping:False
+3/8000 train_loss: 13.2105 clean_ce:13.2105 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.1m tok/s: 44094 looping:False
+4/8000 train_loss: 11.7122 clean_ce:11.7122 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.1m tok/s: 43445 looping:False
+5/8000 train_loss: 10.3367 clean_ce:10.3367 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.1m tok/s: 43061 looping:False
+6/8000 train_loss: 8.6437 clean_ce:8.6437 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.2m tok/s: 42831 looping:False
+7/8000 train_loss: 8.3960 clean_ce:8.3960 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.2m tok/s: 42677 looping:False
+8/8000 train_loss: 8.3493 clean_ce:8.3493 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.2m tok/s: 42561 looping:False
+9/8000 train_loss: 8.4342 clean_ce:8.4342 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.2m tok/s: 42486 looping:False
+10/8000 train_loss: 8.2136 clean_ce:8.2136 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 0.3m tok/s: 42412 looping:False
+50/8000 train_loss: 5.8465 clean_ce:5.8465 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 1.3m tok/s: 41697 looping:False
+100/8000 train_loss: 5.2791 clean_ce:5.2791 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 2.6m tok/s: 41266 looping:False
+150/8000 train_loss: 4.9474 clean_ce:4.9474 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 4.0m tok/s: 41265 looping:False
+200/8000 train_loss: 4.6815 clean_ce:4.6815 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 5.3m tok/s: 41280 looping:False
+250/8000 train_loss: 4.5749 clean_ce:4.5749 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 6.6m tok/s: 41228 looping:False
+300/8000 train_loss: 4.4290 clean_ce:4.4290 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 8.0m tok/s: 41196 looping:False
+350/8000 train_loss: 4.2979 clean_ce:4.2979 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 9.3m tok/s: 41258 looping:False
+400/8000 train_loss: 4.2187 clean_ce:4.2187 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 10.6m tok/s: 41257 looping:False
+450/8000 train_loss: 4.2367 clean_ce:4.2367 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 11.9m tok/s: 41248 looping:False
+500/8000 train_loss: 4.1995 clean_ce:4.1995 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 13.2m tok/s: 41253 looping:False
+500/8000 val_loss: 4.0677 val_bpb: 1.6033
+550/8000 train_loss: 4.1340 clean_ce:4.1340 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 14.6m tok/s: 41189 looping:False
+600/8000 train_loss: 4.1068 clean_ce:4.1068 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 16.0m tok/s: 41057 looping:False
+650/8000 train_loss: 4.0508 clean_ce:4.0508 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 17.3m tok/s: 40938 looping:False
+700/8000 train_loss: 3.9638 clean_ce:3.9638 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 18.7m tok/s: 40829 looping:False
+750/8000 train_loss: 3.9278 clean_ce:3.9278 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 20.1m tok/s: 40724 looping:False
+800/8000 train_loss: 3.9382 clean_ce:3.9382 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 21.5m tok/s: 40631 looping:False
+850/8000 train_loss: 3.9024 clean_ce:3.9024 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 22.9m tok/s: 40541 looping:False
+900/8000 train_loss: 3.7621 clean_ce:3.7621 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 24.3m tok/s: 40474 looping:False
+950/8000 train_loss: 3.7999 clean_ce:3.7999 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 25.7m tok/s: 40440 looping:False
+1000/8000 train_loss: 3.9035 clean_ce:3.9035 aux_loss:0.0000 ctx_ce:0.0000 hard_ce:0.0000 router_loss:0.0000 router_pos_rate:0.0000 router_precision:0.0000 aux_active:0.0000 shell_frac:0.0000 anchor_frac:0.0000 train_time: 27.0m tok/s: 40432 looping:False
+1000/8000 val_loss: 3.7756 val_bpb: 1.4882
+1500/8000 val_loss: 3.6597 val_bpb: 1.4425
+layer_loop:phase1 step:1600 frac:0.200
+2000/8000 val_loss: 3.6098 val_bpb: 1.4228
+2500/8000 val_loss: 3.5701 val_bpb: 1.4071
+layer_loop:phase2 step:2800 frac:0.350
+3000/8000 val_loss: 3.5608 val_bpb: 1.4035
+3500/8000 val_loss: 3.5656 val_bpb: 1.4054
+4000/8000 val_loss: 3.5656 val_bpb: 1.4054
+4500/8000 val_loss: 3.5476 val_bpb: 1.3983
+5000/8000 val_loss: 3.5332 val_bpb: 1.3926
+5500/8000 val_loss: 3.4802 val_bpb: 1.3717
+6000/8000 val_loss: 3.4207 val_bpb: 1.3482
+6500/8000 val_loss: 3.3603 val_bpb: 1.3245
+7000/8000 val_loss: 3.2788 val_bpb: 1.2923
+7500/8000 val_loss: 3.1819 val_bpb: 1.2541
+8000/8000 val_loss: 3.0896 val_bpb: 1.2178
+peak memory allocated: 11550 MiB reserved: 11880 MiB
+ema:applying EMA weights
+pre-quantization post-ema val_loss:3.08298281 val_bpb:1.21514573 eval_time:2598ms
+Serialized model: 155801895 bytes
+Code size: 109199 bytes
+GPTQ:collecting Hessians from calibration data...
+GPTQ:collected 81 Hessians in 20.6s
+GPTQ:saved Hessian diagnostics to hessian_diagnostics.pt (81 matrices)
+Quantized weights:
+  gptq (int6): blocks.attn.c_k.weight, blocks.attn.c_q.weight, blocks.attn.c_v.weight, blocks.attn.proj.weight, blocks.mlp.fc.weight, blocks.mlp.proj.weight
+  gptq (int8): tok_emb.weight
+  passthrough (float16): blocks.attn.q_gain, blocks.attn_scale, blocks.mlp.fc.A, blocks.mlp.fc.B, blocks.mlp.proj.A, blocks.mlp.proj.B, blocks.mlp_scale, blocks.resid_mix, loop_pass_embed.weight, override_mlps.4_p1.fc.A, override_mlps.4_p1.fc.B, override_mlps.4_p1.proj.A, override_mlps.4_p1.proj.B, override_mlps.4_p2.fc.A, override_mlps.4_p2.fc.B, override_mlps.4_p2.proj.A, override_mlps.4_p2.proj.B, override_mlps.5_p1.fc.A, override_mlps.5_p1.fc.B, override_mlps.5_p1.proj.A, override_mlps.5_p1.proj.B, override_mlps.5_p2.fc.A, override_mlps.5_p2.fc.B, override_mlps.5_p2.proj.A, override_mlps.5_p2.proj.B, role_emb.weight, skip_gates, skip_weights, time_embed.weight, time_mlp.0.weight
+  rowwise (int6): time_mlp.2.weight
+Serialized model quantized+brotli: 18292956 bytes
+Total submission size quantized+brotli: 18402155 bytes
+quantized val_loss:3.09596570 val_bpb:1.22026288 eval_time:2679ms
+quantized_sliding_window val_loss:3.06154474 val_bpb:1.20669600 eval_time:126129ms
