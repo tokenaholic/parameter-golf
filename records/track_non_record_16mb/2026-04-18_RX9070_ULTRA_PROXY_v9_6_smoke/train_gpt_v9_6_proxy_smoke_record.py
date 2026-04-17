@@ -3,8 +3,9 @@ Sanitized reference copy for the RX 9070 Ultra Proxy v9.6 smoke run.
 
 This bundle is included for a compute-grant draft PR together with the exact
 run parameters and training log. The run used a larger local script that built
-on a selective-denoising / recurrence stack and imported helper functionality
-from train_gpt_v7_1.py.
+on a selective-denoising / recurrence stack and imported a structural helper
+module. In this bundle that helper is renamed to `struct_helper_reference.py`
+so it does not imply the run used an older training configuration.
 
 Key ideas exercised in the run:
 - progressive two-phase layer looping
@@ -20,7 +21,7 @@ of truth for the exact smoke-run configuration and outcome.
 from __future__ import annotations
 
 import os
-import train_gpt_v7_1 as struct_base
+import struct_helper_reference as struct_base
 
 
 class Hyperparameters:
