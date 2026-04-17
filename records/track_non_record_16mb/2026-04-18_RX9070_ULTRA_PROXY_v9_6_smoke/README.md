@@ -24,4 +24,5 @@ This is not presented as a final tuned record submission. It is a smoke/proxy ru
 ## Notes
 - This run was performed as a local proxy experiment, not on the official 8xH100 track.
 - The files here are sanitized copies prepared for a draft PR / compute grant reference.
-- The main training script depends on the included `train_gpt_v7_1.py` helper module.
+- The local smoke-run script used a structural helper module with an older filename; in this bundle that dependency is renamed to `struct_helper_reference.py` so it does not imply the run used an older training configuration.
+- The exact run setup is captured in `run_command_sanitized.txt` and `rx9070_ULTRA_PROXY_v9_6_smoke.log.txt`.
