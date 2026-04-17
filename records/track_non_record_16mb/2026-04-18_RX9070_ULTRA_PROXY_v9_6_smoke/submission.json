@@ -1,0 +1,12 @@
+{
+  "title": "RX 9070 Ultra Proxy v9.6 Smoke",
+  "author": "tokenaholic",
+  "github": "tokenaholic",
+  "track": "non-record",
+  "date": "2026-04-18",
+  "run_id": "rx9070_ULTRA_PROXY_v9_6_smoke",
+  "val_bpb": 1.2178,
+  "val_bpb_post_ema": 1.21514573,
+  "val_bpb_quantized_sliding_window": 1.20669600,
+  "notes": "Single AMD RX 9070 proxy smoke run for validating progressive loops and structural denoising scheduling."
+}
